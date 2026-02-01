@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.7;
-    color: #2d3748;
-    background-color: #fff;
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    line-height: 1.8;
+    color: #4a4a4a;
+    background-color: #fffdf8;
 }
 
 /* Colors */
@@ -23,54 +23,60 @@ body {
     --blue-dark: #162e51;
     --gold: #e5a000;
     --gold-light: #f5c542;
-    --cream: #fdf6e3;
-    --gray: #5c6873;
-    --gray-light: #f7f9fa;
+    --charcoal: #2d2d2d;
+    --cream: #fffdf8;
+    --cream-dark: #f5f0e6;
+    --text: #4a4a4a;
+    --text-light: #6b6b6b;
 }
 
 /* Typography */
 h1, h2, h3, h4 {
-    font-weight: 700;
-    line-height: 1.25;
-    color: var(--blue-dark);
+    font-family: 'Nunito', 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--charcoal);
+    letter-spacing: -0.5px;
 }
 
 .section-title {
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section-intro {
     text-align: center;
-    font-size: 1.1rem;
-    color: var(--gray);
-    max-width: 700px;
-    margin: 0 auto 3rem;
+    font-size: 1.15rem;
+    color: var(--text);
+    max-width: 650px;
+    margin: 0 auto 2.5rem;
 }
 
 .lead {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    color: var(--blue);
+    color: var(--charcoal);
     margin-bottom: 1.5rem;
 }
 
 /* Layout */
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
 section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 /* Navigation */
 .navbar {
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    background: var(--cream);
+    border-bottom: 2px solid var(--gold);
     position: fixed;
     width: 100%;
     top: 0;
@@ -78,7 +84,7 @@ section {
 }
 
 .nav-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem 1.5rem;
     display: flex;
@@ -87,10 +93,11 @@ section {
 }
 
 .logo h1 {
-    font-size: 1.25rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 900;
     color: var(--blue);
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -102,9 +109,12 @@ section {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--gray);
-    font-weight: 500;
-    font-size: 0.95rem;
+    color: var(--charcoal);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     transition: color 0.2s;
 }
 
@@ -114,10 +124,9 @@ section {
 
 .donate-btn {
     background: var(--gold);
-    color: var(--blue-dark) !important;
+    color: var(--charcoal) !important;
     padding: 0.5rem 1.25rem;
-    border-radius: 6px;
-    font-weight: 600;
+    border-radius: 4px;
     transition: background 0.2s;
 }
 
@@ -127,22 +136,24 @@ section {
 
 /* Hero */
 .hero {
-    margin-top: 60px;
-    padding: 8rem 2rem;
+    margin-top: 58px;
+    padding: 6rem 2rem;
     background: var(--blue);
     text-align: center;
 }
 
 .hero-overlay {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #fff;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero-title .spark {
@@ -150,98 +161,106 @@ section {
 }
 
 .hero-subtitle {
-    font-size: 1.35rem;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.25rem;
     color: rgba(255,255,255,0.9);
     font-weight: 400;
+    font-style: italic;
     margin-bottom: 1.5rem;
 }
 
 .hero-date {
     display: inline-block;
+    font-family: 'Nunito', sans-serif;
     background: var(--gold);
-    color: var(--blue-dark);
+    color: var(--charcoal);
     padding: 0.5rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 700;
+    border-radius: 4px;
+    font-weight: 800;
     font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* About */
 .about {
-    background: #fff;
+    background: var(--cream);
 }
 
 .about-content {
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto 3rem;
     text-align: center;
 }
 
 .about-content p {
-    margin-bottom: 1rem;
-    color: var(--gray);
-    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+    font-size: 1.1rem;
 }
 
 .value-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .value-card {
-    background: var(--gray-light);
-    padding: 2rem;
-    border-radius: 8px;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 4px;
     text-align: center;
-    border-top: 4px solid var(--gold);
+    border-left: 4px solid var(--gold);
 }
 
 .value-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     margin-bottom: 0.75rem;
-    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .value-card p {
-    font-size: 0.95rem;
-    color: var(--gray);
+    font-size: 1rem;
+    color: var(--text);
 }
 
 /* Events */
 .events {
-    background: var(--cream);
+    background: var(--cream-dark);
 }
 
 .event-card {
     background: #fff;
     padding: 2.5rem;
-    border-radius: 8px;
-    max-width: 800px;
+    border-radius: 4px;
+    max-width: 750px;
     margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .event-header {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px dashed var(--gold);
 }
 
 .event-header h3 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     margin-bottom: 0.25rem;
+    text-transform: uppercase;
 }
 
 .event-location {
-    color: var(--gold);
-    font-weight: 600;
-    font-size: 1.05rem;
+    color: var(--blue);
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-style: italic;
 }
 
 .event-card > p {
-    color: var(--gray);
-    font-size: 1.05rem;
+    color: var(--text);
+    font-size: 1.1rem;
     margin-bottom: 2rem;
 }
 
@@ -249,31 +268,34 @@ section {
     background: var(--blue);
     color: #fff;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .event-callout h4 {
     color: var(--gold-light);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .event-callout p {
+    font-family: 'Lora', Georgia, serif;
     color: rgba(255,255,255,0.9);
     margin-bottom: 1.5rem;
 }
 
 /* Partners */
 .partners {
-    background: #fff;
+    background: var(--cream);
 }
 
 .partner-box {
     background: var(--blue);
     color: #fff;
-    padding: 3rem;
-    border-radius: 8px;
-    max-width: 800px;
+    padding: 2.5rem;
+    border-radius: 4px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -281,16 +303,19 @@ section {
     color: var(--gold-light);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .partner-box > p {
+    font-family: 'Lora', Georgia, serif;
     color: rgba(255,255,255,0.9);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .partner-list {
     margin: 0 0 2rem 1.25rem;
     color: rgba(255,255,255,0.9);
+    font-family: 'Lora', Georgia, serif;
 }
 
 .partner-list li {
@@ -299,99 +324,105 @@ section {
 
 /* Join */
 .join {
-    background: var(--gray-light);
+    background: var(--cream-dark);
 }
 
 .volunteer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .volunteer-card {
     background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 1.5rem;
+    border-radius: 4px;
+    border-top: 4px solid var(--blue);
 }
 
 .volunteer-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     margin-bottom: 0.75rem;
-    color: var(--blue);
+    text-transform: uppercase;
 }
 
 .volunteer-card p {
-    font-size: 0.95rem;
-    color: var(--gray);
+    font-size: 1rem;
+    color: var(--text);
 }
 
 .join-cta {
     background: var(--gold);
-    padding: 3rem;
-    border-radius: 8px;
+    padding: 2.5rem;
+    border-radius: 4px;
     text-align: center;
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .join-cta h3 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--blue-dark);
+    text-transform: uppercase;
 }
 
 .join-cta p {
-    color: var(--blue-dark);
+    font-family: 'Lora', Georgia, serif;
+    color: var(--charcoal);
     margin-bottom: 1.5rem;
-    opacity: 0.9;
 }
 
 /* Donate */
 .donate {
-    background: #fff;
+    background: var(--cream);
 }
 
 .donate-content {
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
 
 .donate-content > p {
-    color: var(--gray);
+    color: var(--text);
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .donate-box {
-    background: var(--cream);
+    background: #fff;
     padding: 2.5rem;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 2rem;
-    border: 2px solid var(--gold);
+    border: 3px dashed var(--gold);
 }
 
 .donate-box h3 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     margin-bottom: 0.75rem;
+    text-transform: uppercase;
 }
 
 .donate-box p {
-    color: var(--gray);
+    font-family: 'Lora', Georgia, serif;
+    color: var(--text);
     margin-bottom: 1.5rem;
 }
 
 /* Buttons */
 .cta-button {
     display: inline-block;
+    font-family: 'Nunito', sans-serif;
     background: var(--gold);
-    color: var(--blue-dark);
+    color: var(--charcoal);
     padding: 0.875rem 2rem;
-    border-radius: 6px;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     transition: background 0.2s, transform 0.2s;
 }
 
@@ -402,7 +433,7 @@ section {
 
 .cta-button-light {
     background: var(--gold);
-    color: var(--blue-dark);
+    color: var(--charcoal);
 }
 
 .join-cta .cta-button {
@@ -416,7 +447,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--blue-dark);
+    background: var(--charcoal);
     color: #fff;
     padding: 3rem 0 2rem;
 }
@@ -431,23 +462,28 @@ section {
 }
 
 .footer-info h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     color: var(--gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-info p {
+    font-family: 'Lora', Georgia, serif;
     color: rgba(255,255,255,0.7);
     font-size: 0.95rem;
 }
 
 .footer-contact h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 0.5rem;
     color: var(--gold-light);
+    text-transform: uppercase;
 }
 
 .footer-contact a {
+    font-family: 'Lora', Georgia, serif;
     color: #fff;
     text-decoration: none;
 }
@@ -457,11 +493,12 @@ section {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.15);
     padding-top: 1.5rem;
     text-align: center;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.5);
     font-size: 0.9rem;
+    font-family: 'Lora', Georgia, serif;
 }
 
 .footer-bottom a {
@@ -489,7 +526,7 @@ section {
     }
 
     .section-title {
-        font-size: 1.85rem;
+        font-size: 2rem;
     }
 
     section {
@@ -503,7 +540,8 @@ section {
 
     .event-card,
     .partner-box,
-    .join-cta {
+    .join-cta,
+    .donate-box {
         padding: 2rem;
     }
 
@@ -514,11 +552,11 @@ section {
 
 @media (max-width: 480px) {
     .logo h1 {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .nav-links {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         gap: 0.75rem;
     }
 
@@ -527,11 +565,12 @@ section {
     }
 
     .hero {
-        padding: 5rem 1.5rem;
+        padding: 4rem 1.5rem;
     }
 
     .hero-title {
         font-size: 2rem;
+        letter-spacing: 1px;
     }
 
     .container {
